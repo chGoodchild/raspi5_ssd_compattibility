@@ -2,9 +2,10 @@ import subprocess
 import sys
 import time
 import csv
+import psutil
 
 def run_badblocks(device):
-    """ Run badblocks on the specified device and monitor system metrics. """
+    """Run badblocks on the specified device and monitor system metrics."""
     try:
         # Command to start badblocks in non-destructive read-write mode
         cmd = ['sudo', 'badblocks', '-nsv', device]
@@ -19,20 +20,28 @@ def run_badblocks(device):
 
             # Monitor metrics while badblocks is running
             while True:
-                # Check if badblocks is still running
                 if badblocks_process.poll() is not None:
                     break
-                
+
                 # Get current time
                 timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
-                
-                # Dummy values for metrics - Replace these with actual monitoring commands
-                cpu_usage = "Fetch with e.g., psutil"
-                memory_usage = "Fetch with e.g., psutil"
+
+                # Use psutil to fetch CPU and memory usage
+                cpu_usage = psutil.cpu_percent(interval=1)
+                memory_usage = psutil.virtual_memory().percent
+
+                # These metrics would be fetched using appropriate commands or APIs
                 disk_io = "Fetch with iotop or similar"
                 system_voltage = "Use external hardware or specialized HAT"
                 network_activity = "Fetch with nethogs or similar"
-                ssd_temperature = subprocess.check_output(['sudo', 'smartctl', '-A', device, '|', 'grep', 'Temperature']).decode().strip()
+
+                # Correctly execute smartctl within a subprocess
+                try:
+                    ssd_temperature = subprocess.run(['sudo', 'smartctl', '-A', device], capture_output=True, text=True, check=True)
+                    temperature_line = [line for line in ssd_temperature.stdout.split('\n') if "Temperature" in line]
+                    ssd_temperature = temperature_line[0].split()[-1] if temperature_line else "N/A"
+                except subprocess.CalledProcessError as e:
+                    ssd_temperature = "Error retrieving temperature"
 
                 # Read badblocks output to get the current count of bad blocks
                 output = badblocks_process.stdout.readline()
@@ -59,4 +68,5 @@ if __name__ == '__main__':
 
     device_path = sys.argv[1]
     run_badblocks(device_path)
+
 

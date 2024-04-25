@@ -13,10 +13,20 @@ sudo apt-get install nethogs -y
 # Install iotop for disk I/O monitoring
 sudo apt-get install iotop -y
 
-# Install pip for Python3 if not already installed
-sudo apt-get install python3-pip -y
+# Install Python3 venv for virtual environment support
+sudo apt-get install python3-venv -y
 
-# Install psutil, a Python library for fetching system utilization (CPU, memory, disks, network, sensors)
-sudo pip3 install psutil
+# Create a virtual environment for Python packages
+python3 -m venv ~/env
+
+# Activate the virtual environment
+source ~/env/bin/activate
+
+# Install psutil within the virtual environment
+pip install psutil
+
+# Deactivate the virtual environment
+deactivate
 
 echo "All dependencies installed successfully!"
+
