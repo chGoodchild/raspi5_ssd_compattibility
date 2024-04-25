@@ -21,6 +21,7 @@ def run_badblocks(device):
             # Monitor metrics while badblocks is running
             while True:
                 if badblocks_process.poll() is not None:
+                    print("Badblocks process completed.")
                     break
 
                 # Get current time
@@ -47,9 +48,13 @@ def run_badblocks(device):
                 output = badblocks_process.stdout.readline()
                 bad_blocks = "Parse output for bad block count"
 
-                # Write metrics to CSV
+                # Write metrics to CSV and flush to ensure it's written to disk
                 writer.writerow([timestamp, cpu_usage, memory_usage, disk_io, system_voltage, network_activity,
                                  ssd_temperature, bad_blocks])
+                file.flush()
+
+                # Output current state to console for verbosity
+                print(f"Logged at {timestamp}: CPU {cpu_usage}%, Memory {memory_usage}%, Temp {ssd_temperature}")
 
                 # Sleep before next measurement
                 time.sleep(10)
@@ -67,6 +72,5 @@ if __name__ == '__main__':
         sys.exit(1)
 
     device_path = sys.argv[1]
+    print(f"Starting badblocks on {device_path}")
     run_badblocks(device_path)
-
-
