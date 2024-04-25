@@ -2,44 +2,55 @@ import subprocess
 import sys
 import time
 import csv
-import select
+import psutil
 
-def run_badblocks(device):
-    """Run badblocks on the specified device and monitor system metrics."""
+def fetch_ssd_temperature(device):
+    """Fetch SSD temperature using smartctl."""
     try:
-        cmd = ['sudo', 'badblocks', '-nsv', device]
-        print(f"Executing command: {' '.join(cmd)}")
-        badblocks_process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1)
+        result = subprocess.run(['sudo', 'smartctl', '-A', device], capture_output=True, text=True, check=True)
+        for line in result.stdout.splitlines():
+            if "Temperature" in line:
+                return line.split()[-1]
+    except subprocess.CalledProcessError:
+        return "Error retrieving temperature"
+    return "N/A"
 
-        with open('system_metrics.csv', 'w', newline='') as file:
-            writer = csv.writer(file)
-            writer.writerow(['Timestamp', 'Bad Blocks Output'])
+def write_metrics_to_csv(data):
+    """Write metrics to the CSV file."""
+    with open('system_metrics.csv', 'a', newline='') as file:  # Open in append mode
+        writer = csv.writer(file)
+        writer.writerow(data)
+        file.flush()  # Ensure data is written to disk
 
-            while True:
-                read_ready, _, _ = select.select([badblocks_process.stdout], [], [], 0.1)
-                if read_ready:
-                    output = badblocks_process.stdout.readline()
-                    if output:
-                        timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
-                        writer.writerow([timestamp, output.strip()])
-                        print("Badblocks output:", output.strip())
-                        file.flush()
-                if badblocks_process.poll() is not None and not output:
-                    break
+def monitor_system_metrics(device):
+    """Monitor system metrics over time."""
+    # Write CSV header if file is new
+    with open('system_metrics.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['Timestamp', 'CPU Usage', 'Memory Usage', 'Disk IO', 'System Voltage',
+                         'Network Activity', 'SSD Temperature'])
 
-        # Handling errors
-        stderr_output = badblocks_process.stderr.read()
-        if stderr_output:
-            print("Errors encountered during badblocks test:", stderr_output)
+    while True:
+        timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
+        cpu_usage = psutil.cpu_percent(interval=1)
+        memory_usage = psutil.virtual_memory().percent
+        ssd_temperature = fetch_ssd_temperature(device)
 
-    except Exception as e:
-        print("An error occurred:", str(e))
+        # Prepare data row
+        data = [timestamp, cpu_usage, memory_usage, "Disk IO Placeholder", "System Voltage Placeholder",
+                "Network Activity Placeholder", ssd_temperature]
+
+        # Write to CSV
+        write_metrics_to_csv(data)
+
+        print(f"Logged at {timestamp}: CPU {cpu_usage}%, Memory {memory_usage}%, SSD Temp {ssd_temperature}")
+        time.sleep(10)  # Adjust as necessary
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print("Usage: python script.py /dev/sdX")
+        print("Usage: python monitor.py /dev/sdX")
         sys.exit(1)
 
     device_path = sys.argv[1]
-    print(f"Starting badblocks on {device_path}")
-    run_badblocks(device_path)
+    print(f"Monitoring system metrics for {device_path}")
+    monitor_system_metrics(device_path)
