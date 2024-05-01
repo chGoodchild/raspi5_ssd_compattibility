@@ -1,0 +1,11 @@
+pachai@raspberrypi:~/Desktop/system_metrics $ sudo badblocks -wsv /dev/sda1 > badblocks_output.txt
+Checking for bad blocks in read-write mode
+From block 0 to 1953513471
+Testing with pattern 0xaa: done                                                 
+Reading and comparing:   0.01% done, 93:12:48 elapsed. (123541/825837184/0 errors)
+  0.01% done, 93:12:50 elapsed. (123542/825837184/0 errors)
+
+  0.01% done, 93:14:43 elapsed. (123585/825837184/0 errors)
+^C0.01% done, 93:14:50 elapsed. (123588/825837184/0 errors)
+
+Interrupted at block 123589
