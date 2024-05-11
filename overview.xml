@@ -25,7 +25,7 @@
   </gnm:Attributes>
   <office:document-meta xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:ooo="http://openoffice.org/2004/office" office:version="1.2">
     <office:meta>
-      <dc:date>2024-05-01T19:00:40Z</dc:date>
+      <dc:date>2024-05-11T22:31:53Z</dc:date>
       <meta:creation-date>2024-05-01T18:46:50Z</meta:creation-date>
     </office:meta>
   </office:document-meta>
@@ -33,12 +33,12 @@
   <gnm:SheetNameIndex>
     <gnm:SheetName gnm:Cols="256" gnm:Rows="65536">Sheet1</gnm:SheetName>
   </gnm:SheetNameIndex>
-  <gnm:Geometry Width="1920" Height="797"/>
+  <gnm:Geometry Width="1528" Height="627"/>
   <gnm:Sheets>
     <gnm:Sheet DisplayFormulas="0" HideZero="0" HideGrid="0" HideColHeader="0" HideRowHeader="0" DisplayOutlines="1" OutlineSymbolsBelow="1" OutlineSymbolsRight="1" Visibility="GNM_SHEET_VISIBILITY_VISIBLE" GridColor="0:0:0">
       <gnm:Name>Sheet1</gnm:Name>
-      <gnm:MaxCol>5</gnm:MaxCol>
-      <gnm:MaxRow>2</gnm:MaxRow>
+      <gnm:MaxCol>14</gnm:MaxCol>
+      <gnm:MaxRow>22</gnm:MaxRow>
       <gnm:Zoom>0.85</gnm:Zoom>
       <gnm:Names>
         <gnm:Name>
@@ -92,7 +92,7 @@
         </gnm:StyleRegion>
       </gnm:Styles>
       <gnm:Cols DefaultSizePts="60.75">
-        <gnm:ColInfo No="0" Unit="77.25" HardSize="1"/>
+        <gnm:ColInfo No="0" Unit="119.1" HardSize="1"/>
         <gnm:ColInfo No="1" Unit="67.5" HardSize="1"/>
         <gnm:ColInfo No="2" Unit="313.2" HardSize="1"/>
         <gnm:ColInfo No="3" Unit="360" HardSize="1"/>
@@ -100,8 +100,8 @@
         <gnm:ColInfo No="5" Unit="348.5" HardSize="1"/>
       </gnm:Cols>
       <gnm:Rows DefaultSizePts="13.5"/>
-      <gnm:Selections CursorCol="3" CursorRow="18">
-        <gnm:Selection startCol="3" startRow="18" endCol="3" endRow="18"/>
+      <gnm:Selections CursorCol="2" CursorRow="13">
+        <gnm:Selection startCol="2" startRow="13" endCol="2" endRow="13"/>
       </gnm:Selections>
       <gnm:Cells>
         <gnm:Cell Row="0" Col="0" ValueType="60">Test name</gnm:Cell>
@@ -116,14 +116,20 @@
         <gnm:Cell Row="1" Col="3" ValueType="60">Intenso 2,5 inch 2TB performance SSD, SATAIII</gnm:Cell>
         <gnm:Cell Row="1" Col="4" ValueType="60">Geekworm x1100 2.5 inch SATA HDD/SSD shield for raspberry pi</gnm:Cell>
         <gnm:Cell Row="1" Col="5" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
-        <gnm:Cell Row="2" Col="0" ValueType="60">m2_sata_ssd</gnm:Cell>
+        <gnm:Cell Row="2" Col="0" ValueType="60">m2_sata_ssd_usb</gnm:Cell>
         <gnm:Cell Row="2" Col="1" ValueType="60">HDMI cable</gnm:Cell>
         <gnm:Cell Row="2" Col="2" ValueType="60">Keyboard &amp; mouse with USB hub and without external power</gnm:Cell>
         <gnm:Cell Row="2" Col="3" ValueType="60">Lexar NM610PRO 2TB SSD, M.2 2280 PCIe Gen3x4 NVMe 1.4 Internal</gnm:Cell>
         <gnm:Cell Row="2" Col="4" ValueType="60">Beikell M.2 NVME Enclosure, USB 3.2 Gen 2 NVMe to USB Adapter</gnm:Cell>
         <gnm:Cell Row="2" Col="5" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
+        <gnm:Cell Row="3" Col="0" ValueType="60">m2_sata_ssd_N04</gnm:Cell>
+        <gnm:Cell Row="3" Col="1" ValueType="60">None / SSH</gnm:Cell>
+        <gnm:Cell Row="3" Col="2" ValueType="60">None / SSH</gnm:Cell>
+        <gnm:Cell Row="3" Col="3" ValueType="60">Lexar NM610PRO 2TB SSD, M.2 2280 PCIe Gen3x4 NVMe 1.4 Internal</gnm:Cell>
+        <gnm:Cell Row="3" Col="4" ValueType="60">GeeekPi N04 M.2 2280 NVMe SSD Shield for Raspberry Pi 5</gnm:Cell>
+        <gnm:Cell Row="3" Col="5" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
       </gnm:Cells>
-      <gnm:SheetLayout TopLeft="B1"/>
+      <gnm:SheetLayout TopLeft="A1"/>
       <gnm:Solver ModelType="0" ProblemType="0" MaxTime="60" MaxIter="1000" NonNeg="1" Discr="0" AutoScale="0" ProgramR="0" SensitivityR="0"/>
     </gnm:Sheet>
   </gnm:Sheets>
