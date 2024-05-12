@@ -1,0 +1,15 @@
+$ sudo badblocks -wsv /dev/nvme0n1 > badblocks_output.txt
+Checking for bad blocks in read-write mode
+From block 0 to 1953514583
+Testing with pattern 0xaa:  7.76% done, 18:27 elapsed. (0/0/0 errors)
+ 7.76% done, 18:28 elapsed. (0/0/0 errors)
+ 10.27% done, 27:40 elapsed. (0/0/0 errors)
+ 11.52% done, 32:34 elapsed. (0/0/0 errors)
+ 13.90% done, 41:15 elapsed. (0/0/0 errors)
+Testing with pattern 0x55: 37.31% done, 11:17:49 elapsed. (0/0/0 errors)
+ 37.31% done, 11:17:50 elapsed. (0/0/0 errors)
+ 37.45% done, 11:18:19 elapsed. (0/0/0 errors)
+ 37.46% done, 11:18:20 elapsed. (0/0/0 errors)
+Reading and comparing: 1.80% done, 15:31:41 elapsed. (0/0/0 errors)
+
+Interrupted at block 621530816
