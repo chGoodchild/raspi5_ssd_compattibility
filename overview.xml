@@ -25,7 +25,7 @@
   </gnm:Attributes>
   <office:document-meta xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:ooo="http://openoffice.org/2004/office" office:version="1.2">
     <office:meta>
-      <dc:date>2024-05-17T13:18:30Z</dc:date>
+      <dc:date>2024-05-18T16:37:55Z</dc:date>
       <meta:creation-date>2024-05-01T18:46:50Z</meta:creation-date>
     </office:meta>
   </office:document-meta>
@@ -33,12 +33,12 @@
   <gnm:SheetNameIndex>
     <gnm:SheetName gnm:Cols="256" gnm:Rows="65536">Sheet1</gnm:SheetName>
   </gnm:SheetNameIndex>
-  <gnm:Geometry Width="1530" Height="627"/>
+  <gnm:Geometry Width="1600" Height="627"/>
   <gnm:Sheets>
     <gnm:Sheet DisplayFormulas="0" HideZero="0" HideGrid="0" HideColHeader="0" HideRowHeader="0" DisplayOutlines="1" OutlineSymbolsBelow="1" OutlineSymbolsRight="1" Visibility="GNM_SHEET_VISIBILITY_VISIBLE" GridColor="0:0:0">
       <gnm:Name>Sheet1</gnm:Name>
-      <gnm:MaxCol>8</gnm:MaxCol>
-      <gnm:MaxRow>3</gnm:MaxRow>
+      <gnm:MaxCol>9</gnm:MaxCol>
+      <gnm:MaxRow>4</gnm:MaxRow>
       <gnm:Zoom>0.85</gnm:Zoom>
       <gnm:Names>
         <gnm:Name>
@@ -80,27 +80,17 @@
         <gnm:errors PrintErrorsAs="GNM_PRINT_ERRORS_AS_DISPLAYED"/>
       </gnm:PrintInformation>
       <gnm:Styles>
-        <gnm:StyleRegion startCol="0" startRow="0" endCol="0" endRow="0">
+        <gnm:StyleRegion startCol="0" startRow="0" endCol="1" endRow="0">
           <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
             <gnm:Font Unit="10" Bold="1" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
           </gnm:Style>
         </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="0" startRow="1" endCol="0" endRow="65535">
+        <gnm:StyleRegion startCol="0" startRow="1" endCol="3" endRow="3">
           <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
             <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
           </gnm:Style>
         </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="1" startRow="0" endCol="1" endRow="0">
-          <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
-            <gnm:Font Unit="10" Bold="1" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
-          </gnm:Style>
-        </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="1" startRow="1" endCol="3" endRow="4">
-          <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
-            <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
-          </gnm:Style>
-        </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="1" startRow="5" endCol="1" endRow="65535">
+        <gnm:StyleRegion startCol="0" startRow="4" endCol="255" endRow="65535">
           <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
             <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
           </gnm:Style>
@@ -110,37 +100,38 @@
             <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
           </gnm:Style>
         </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="2" startRow="5" endCol="2" endRow="65535">
-          <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
-            <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
-          </gnm:Style>
-        </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="3" startRow="5" endCol="3" endRow="65535">
-          <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
-            <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
-          </gnm:Style>
-        </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="4" startRow="0" endCol="255" endRow="0">
+        <gnm:StyleRegion startCol="4" startRow="0" endCol="4" endRow="0">
           <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
             <gnm:Font Unit="10" Bold="1" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
           </gnm:Style>
         </gnm:StyleRegion>
-        <gnm:StyleRegion startCol="4" startRow="1" endCol="255" endRow="65535">
+        <gnm:StyleRegion startCol="4" startRow="1" endCol="4" endRow="3">
+          <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
+            <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
+          </gnm:Style>
+        </gnm:StyleRegion>
+        <gnm:StyleRegion startCol="5" startRow="0" endCol="255" endRow="0">
+          <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
+            <gnm:Font Unit="10" Bold="1" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
+          </gnm:Style>
+        </gnm:StyleRegion>
+        <gnm:StyleRegion startCol="5" startRow="1" endCol="255" endRow="3">
           <gnm:Style HAlign="GNM_HALIGN_GENERAL" VAlign="GNM_VALIGN_BOTTOM" WrapText="0" ShrinkToFit="0" Rotation="0" Shade="0" Indent="0" Locked="1" Hidden="0" Fore="0:0:0" Back="FFFF:FFFF:FFFF" PatternColor="0:0:0" Format="General">
             <gnm:Font Unit="10" Bold="0" Italic="0" Underline="0" StrikeThrough="0" Script="0">Sans</gnm:Font>
           </gnm:Style>
         </gnm:StyleRegion>
       </gnm:Styles>
       <gnm:Cols DefaultSizePts="60.75">
-        <gnm:ColInfo No="0" Unit="93.53"/>
+        <gnm:ColInfo No="0" Unit="105.9"/>
         <gnm:ColInfo No="1" Unit="165"/>
         <gnm:ColInfo No="2" Unit="87.35"/>
         <gnm:ColInfo No="3" Unit="89.12"/>
-        <gnm:ColInfo No="4" Unit="61.76"/>
-        <gnm:ColInfo No="5" Unit="309.7"/>
-        <gnm:ColInfo No="6" Unit="352.9"/>
-        <gnm:ColInfo No="7" Unit="336.2"/>
-        <gnm:ColInfo No="8" Unit="340.6"/>
+        <gnm:ColInfo No="4" Unit="346.8"/>
+        <gnm:ColInfo No="5" Unit="61.76"/>
+        <gnm:ColInfo No="6" Unit="309.7"/>
+        <gnm:ColInfo No="7" Unit="352.9"/>
+        <gnm:ColInfo No="8" Unit="336.2"/>
+        <gnm:ColInfo No="9" Unit="340.6"/>
       </gnm:Cols>
       <gnm:Rows DefaultSizePts="13.5"/>
       <gnm:Selections CursorCol="0" CursorRow="5">
@@ -151,32 +142,43 @@
         <gnm:Cell Row="0" Col="1" ValueType="60">Reliability Recommendation</gnm:Cell>
         <gnm:Cell Row="0" Col="2" ValueType="60" ValueFormat="@[bold=1:0:13]">Datarate Read</gnm:Cell>
         <gnm:Cell Row="0" Col="3" ValueType="60" ValueFormat="@[bold=1:0:14]">Datarate Write</gnm:Cell>
-        <gnm:Cell Row="0" Col="4" ValueType="60">Display</gnm:Cell>
-        <gnm:Cell Row="0" Col="5" ValueType="60">Peripherals</gnm:Cell>
-        <gnm:Cell Row="0" Col="6" ValueType="60">SSD Type</gnm:Cell>
-        <gnm:Cell Row="0" Col="7" ValueType="60">SSD Connection</gnm:Cell>
-        <gnm:Cell Row="0" Col="8" ValueType="60">Power supply</gnm:Cell>
+        <gnm:Cell Row="0" Col="4" ValueType="60">Cooling</gnm:Cell>
+        <gnm:Cell Row="0" Col="5" ValueType="60">Display</gnm:Cell>
+        <gnm:Cell Row="0" Col="6" ValueType="60">Peripherals</gnm:Cell>
+        <gnm:Cell Row="0" Col="7" ValueType="60">SSD Type</gnm:Cell>
+        <gnm:Cell Row="0" Col="8" ValueType="60">SSD Connection</gnm:Cell>
+        <gnm:Cell Row="0" Col="9" ValueType="60">Power supply</gnm:Cell>
         <gnm:Cell Row="1" Col="0" ValueType="60">intenso_ssd</gnm:Cell>
         <gnm:Cell Row="1" Col="1" ValueType="60">Good</gnm:Cell>
-        <gnm:Cell Row="1" Col="4" ValueType="60">HDMI cable</gnm:Cell>
-        <gnm:Cell Row="1" Col="5" ValueType="60">Keyboard &amp; mouse with USB hub and without external power</gnm:Cell>
-        <gnm:Cell Row="1" Col="6" ValueType="60">Intenso 2,5 inch 2TB performance SSD, SATAIII</gnm:Cell>
-        <gnm:Cell Row="1" Col="7" ValueType="60">Geekworm x1100 2.5 inch SATA HDD/SSD shield for raspberry pi</gnm:Cell>
-        <gnm:Cell Row="1" Col="8" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
+        <gnm:Cell Row="1" Col="4" ValueType="60">Geekworm Raspberry Pi 5 Case Aluminium Passive Cooling (P122-C)</gnm:Cell>
+        <gnm:Cell Row="1" Col="5" ValueType="60">HDMI cable</gnm:Cell>
+        <gnm:Cell Row="1" Col="6" ValueType="60">Keyboard &amp; mouse with USB hub and without external power</gnm:Cell>
+        <gnm:Cell Row="1" Col="7" ValueType="60">Intenso 2,5 inch 2TB performance SSD, SATAIII</gnm:Cell>
+        <gnm:Cell Row="1" Col="8" ValueType="60">Geekworm x1100 2.5 inch SATA HDD/SSD shield for raspberry pi</gnm:Cell>
+        <gnm:Cell Row="1" Col="9" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
         <gnm:Cell Row="2" Col="0" ValueType="60">m2_sata_ssd_usb</gnm:Cell>
         <gnm:Cell Row="2" Col="1" ValueType="60">Terrible</gnm:Cell>
-        <gnm:Cell Row="2" Col="4" ValueType="60">HDMI cable</gnm:Cell>
-        <gnm:Cell Row="2" Col="5" ValueType="60">Keyboard &amp; mouse with USB hub and without external power</gnm:Cell>
-        <gnm:Cell Row="2" Col="6" ValueType="60">Lexar NM610PRO 2TB SSD, M.2 2280 PCIe Gen3x4 NVMe 1.4 Internal</gnm:Cell>
-        <gnm:Cell Row="2" Col="7" ValueType="60">Beikell M.2 NVME Enclosure, USB 3.2 Gen 2 NVMe to USB Adapter</gnm:Cell>
-        <gnm:Cell Row="2" Col="8" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
+        <gnm:Cell Row="2" Col="4" ValueType="60">Geekworm Raspberry Pi 5 Case Aluminium Passive Cooling (P122-C)</gnm:Cell>
+        <gnm:Cell Row="2" Col="5" ValueType="60">HDMI cable</gnm:Cell>
+        <gnm:Cell Row="2" Col="6" ValueType="60">Keyboard &amp; mouse with USB hub and without external power</gnm:Cell>
+        <gnm:Cell Row="2" Col="7" ValueType="60">Lexar NM610PRO 2TB SSD, M.2 2280 PCIe Gen3x4 NVMe 1.4 Internal</gnm:Cell>
+        <gnm:Cell Row="2" Col="8" ValueType="60">Beikell M.2 NVME Enclosure, USB 3.2 Gen 2 NVMe to USB Adapter</gnm:Cell>
+        <gnm:Cell Row="2" Col="9" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
         <gnm:Cell Row="3" Col="0" ValueType="60">m2_sata_ssd_N04</gnm:Cell>
         <gnm:Cell Row="3" Col="1" ValueType="60">Good</gnm:Cell>
-        <gnm:Cell Row="3" Col="4" ValueType="60">None / SSH</gnm:Cell>
+        <gnm:Cell Row="3" Col="4" ValueType="60">Geekworm Raspberry Pi 5 Case Aluminium Passive Cooling (P122-C)</gnm:Cell>
         <gnm:Cell Row="3" Col="5" ValueType="60">None / SSH</gnm:Cell>
-        <gnm:Cell Row="3" Col="6" ValueType="60">Lexar NM610PRO 2TB SSD, M.2 2280 PCIe Gen3x4 NVMe 1.4 Internal</gnm:Cell>
-        <gnm:Cell Row="3" Col="7" ValueType="60">GeeekPi N04 M.2 2280 NVMe SSD Shield for Raspberry Pi 5</gnm:Cell>
-        <gnm:Cell Row="3" Col="8" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
+        <gnm:Cell Row="3" Col="6" ValueType="60">None / SSH</gnm:Cell>
+        <gnm:Cell Row="3" Col="7" ValueType="60">Lexar NM610PRO 2TB SSD, M.2 2280 PCIe Gen3x4 NVMe 1.4 Internal</gnm:Cell>
+        <gnm:Cell Row="3" Col="8" ValueType="60">GeeekPi N04 M.2 2280 NVMe SSD Shield for Raspberry Pi 5</gnm:Cell>
+        <gnm:Cell Row="3" Col="9" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
+        <gnm:Cell Row="4" Col="0" ValueType="60">m2_sata_ssd_X1001</gnm:Cell>
+        <gnm:Cell Row="4" Col="4" ValueType="60">None</gnm:Cell>
+        <gnm:Cell Row="4" Col="5" ValueType="60">None / SSH</gnm:Cell>
+        <gnm:Cell Row="4" Col="6" ValueType="60">None / SSH</gnm:Cell>
+        <gnm:Cell Row="4" Col="7" ValueType="60">Lexar NM610PRO 2TB SSD, M.2 2280 PCIe Gen3x4 NVMe 1.4 Internal</gnm:Cell>
+        <gnm:Cell Row="4" Col="8" ValueType="60">Mumuve X1001 PCIe M.2 NVMe Board</gnm:Cell>
+        <gnm:Cell Row="4" Col="9" ValueType="60">Raspberry Pi Power Adapter Model 27W, Output 5.1 V, 5A (25.5 W)</gnm:Cell>
       </gnm:Cells>
       <gnm:SheetLayout TopLeft="A1"/>
       <gnm:Solver ModelType="0" ProblemType="0" MaxTime="60" MaxIter="1000" NonNeg="1" Discr="0" AutoScale="0" ProgramR="0" SensitivityR="0"/>
