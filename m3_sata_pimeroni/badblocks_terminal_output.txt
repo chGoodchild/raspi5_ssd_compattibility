@@ -1,0 +1,15 @@
+pachai@raspberrypi:~/raspi5_ssd_compattibility $ sudo badblocks -wsv /dev/nvme0n1 > badblocks_output.txt
+Checking for bad blocks in read-write mode
+From block 0 to 1953514583
+Testing with pattern 0xaa: done                                                 
+Reading and comparing: done                                                 
+Testing with pattern 0x55: done                                                 
+Reading and comparing: done                                                 
+Testing with pattern 0xff: done                                                 
+Reading and comparing: done                                                 
+Testing with pattern 0x00:  39.11% done, 24:55:46 elapsed. (0/0/0 errors)
+done                                                 
+Reading and comparing: done                                                 
+Pass completed, 0 bad blocks found. (0/0/0 errors)
+
+
